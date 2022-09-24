@@ -37,6 +37,10 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     display: block;
     margin-top: 1rem;
     font-size: 2rem;
+
+    @media (max-width: 769px) {
+      width: 10rem;
+    }
   }
 
   ${(props) =>
