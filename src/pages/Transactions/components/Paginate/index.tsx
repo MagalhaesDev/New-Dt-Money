@@ -1,38 +1,62 @@
 import { CaretLeft, CaretRight } from 'phosphor-react'
-import { useEffect, useState } from 'react'
-import { Transaction } from '../../../../contexts/TransactionsContext'
-import { api } from '../../../../lib/axios'
-import { PaginateContainer, PaginateItem } from './styles'
+
+import {
+  PaginateContainer,
+  PaginateItem,
+  BeforeAndNext,
+  MessageVoid,
+} from './styles'
 
 interface PaginateProps {
   pages: number
+  currentPage: number
   handleSetCurrentPage: (index: number) => void
+  handleBeforeAndNextPage: (type: string) => void
 }
 
-export function Paginate({ pages, handleSetCurrentPage }: PaginateProps) {
+export function Paginate({
+  pages,
+  handleSetCurrentPage,
+  handleBeforeAndNextPage,
+  currentPage,
+}: PaginateProps) {
   return (
     <PaginateContainer>
-      <span>
-        <CaretLeft size={24} weight="fill" />
-      </span>
-
-      {Array.from(Array(pages), (item, index) => {
-        return (
-          <PaginateItem
-            key={index}
-            value={index}
-            onClick={(e) =>
-              handleSetCurrentPage(Number((e.target as HTMLInputElement).value))
-            }
+      {pages > 0 ? (
+        <>
+          <BeforeAndNext
+            onClick={(e) => handleBeforeAndNextPage('before')}
+            disabled={currentPage === 0}
           >
-            {index + 1}
-          </PaginateItem>
-        )
-      })}
+            <CaretLeft size={24} weight="fill" />
+          </BeforeAndNext>
 
-      <span>
-        <CaretRight size={24} weight="fill" />
-      </span>
+          {Array.from(Array(pages), (item, index) => {
+            return (
+              <PaginateItem
+                key={index}
+                value={index}
+                onClick={(e) =>
+                  handleSetCurrentPage(
+                    Number((e.target as HTMLInputElement).value),
+                  )
+                }
+              >
+                {index + 1}
+              </PaginateItem>
+            )
+          })}
+
+          <BeforeAndNext
+            onClick={(e) => handleBeforeAndNextPage('next')}
+            disabled={currentPage + 1 >= pages}
+          >
+            <CaretRight size={24} weight="fill" />
+          </BeforeAndNext>
+        </>
+      ) : (
+        <MessageVoid>Nenhuma transação foi encontrada</MessageVoid>
+      )}
     </PaginateContainer>
   )
 }

@@ -5,112 +5,40 @@
       "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Venda",
-      "price": 14000,
+      "price": 9000,
       "createdAt": "2022-07-29T19:36:43.721Z"
     },
     {
-      "id": 2,
-      "description": "Lanche",
+      "description": "Cinema",
+      "price": 21,
+      "category": "Entretenimento",
       "type": "outcome",
-      "category": "Alimentação",
-      "price": 20,
-      "createdAt": "2022-07-23T21:36:43.721Z"
-    },
-    {
-      "id": 3,
-      "description": "Academia",
-      "type": "outcome",
-      "category": "Saúde",
-      "price": 80,
-      "createdAt": "2022-07-05T14:00:30.711Z"
-    },
-    {
-      "id": 4,
-      "description": "Dieta",
-      "type": "outcome",
-      "category": "Saúde",
-      "price": 456,
-      "createdAt": "2022-07-05T15:00:20.451Z"
+      "createdAt": "2022-09-24T20:21:50.569Z",
+      "id": 2
     },
     {
       "description": "Jogo",
       "price": 30,
       "category": "Diversao",
       "type": "outcome",
-      "createdAt": "2022-08-17T14:55:56.409Z",
+      "createdAt": "2022-09-24T20:26:47.572Z",
+      "id": 3
+    },
+    {
+      "description": "Suplementos",
+      "price": 120,
+      "category": "Dieta",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:29:16.910Z",
+      "id": 4
+    },
+    {
+      "description": "Conta de água",
+      "price": 80,
+      "category": "Casa",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:31:22.208Z",
       "id": 5
-    },
-    {
-      "description": "Iorgute",
-      "price": 10,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2022-08-17T17:55:24.426Z",
-      "id": 6
-    },
-    {
-      "description": "Cinema",
-      "price": 20,
-      "category": "Diversao",
-      "type": "outcome",
-      "createdAt": "2022-08-17T18:57:30.523Z",
-      "id": 7
-    },
-    {
-      "description": "Arroz",
-      "price": 321,
-      "category": "Diversao",
-      "type": "outcome",
-      "createdAt": "2022-08-17T19:27:21.459Z",
-      "id": 8
-    },
-    {
-      "description": "Iorgute",
-      "price": 4,
-      "category": "Diversao",
-      "type": "outcome",
-      "createdAt": "2022-08-17T19:27:26.431Z",
-      "id": 9
-    },
-    {
-      "description": "Arroz",
-      "price": 4,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2022-08-17T19:27:30.433Z",
-      "id": 10
-    },
-    {
-      "description": "Iorgute",
-      "price": 4,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2022-08-17T19:27:34.862Z",
-      "id": 11
-    },
-    {
-      "description": "Arroz",
-      "price": 4,
-      "category": "Diversao",
-      "type": "outcome",
-      "createdAt": "2022-08-17T19:27:39.455Z",
-      "id": 12
-    },
-    {
-      "description": "Teste",
-      "price": 30,
-      "category": "comida",
-      "type": "outcome",
-      "createdAt": "2022-08-17T19:30:18.792Z",
-      "id": 13
-    },
-    {
-      "description": "teste2",
-      "price": 32,
-      "category": "Diversao",
-      "type": "income",
-      "createdAt": "2022-08-17T19:30:46.620Z",
-      "id": 14
     }
   ]
 }

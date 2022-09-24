@@ -5,15 +5,6 @@ export const PaginateContainer = styled.footer`
   align-items: center;
   gap: 0.5rem;
   margin: 2.5rem;
-
-  span {
-    cursor: pointer;
-
-    &:hover svg {
-      color: ${(props) => props.theme['green-500']};
-      transition: color 0.2s;
-    }
-  }
 `
 
 export const PaginateItem = styled.button`
@@ -36,4 +27,21 @@ export const PaginateItem = styled.button`
   }
 
   cursor: pointer;
+`
+
+export const BeforeAndNext = styled.button`
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: ${(props) => props.theme['green-500']};
+
+  &:disabled {
+    color: ${(props) => props.theme['gray-600']};
+    cursor: not-allowed;
+  }
+`
+
+export const MessageVoid = styled.h2`
+  color: ${(props) => props.theme['gray-500']};
+  margin-top: 3rem;
 `

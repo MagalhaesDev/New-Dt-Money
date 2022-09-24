@@ -17,7 +17,7 @@ export function Transactions() {
     return context.transactions
   })
 
-  const [itensPerPage, setItensPerPage] = useState(10)
+  const [itensPerPage, setItensPerPage] = useState(7)
   const [currentPage, setCurrentPage] = useState(0)
   const pages = Math.ceil(transactions.length / itensPerPage)
 
@@ -28,6 +28,15 @@ export function Transactions() {
 
   function handleSetCurrentPage(index: number) {
     setCurrentPage(index)
+  }
+
+  function handleBeforeAndNextPage(type: string) {
+    if (type === 'before') {
+      setCurrentPage((data: number) => (data -= 1))
+    }
+    if (type === 'next') {
+      setCurrentPage((data: number) => (data += 1))
+    }
   }
 
   return (
@@ -55,7 +64,12 @@ export function Transactions() {
             ))}
           </tbody>
         </TransactionsTable>
-        <Paginate pages={pages} handleSetCurrentPage={handleSetCurrentPage} />
+        <Paginate
+          pages={pages}
+          handleSetCurrentPage={handleSetCurrentPage}
+          handleBeforeAndNextPage={handleBeforeAndNextPage}
+          currentPage={currentPage}
+        />
       </TransactionsContainer>
     </div>
   )

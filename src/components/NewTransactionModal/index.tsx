@@ -44,7 +44,14 @@ export function NewTransactionModal() {
   })
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
-    await createTransaction(data)
+    const { description, price, category, type } = data
+
+    await createTransaction({
+      description,
+      price,
+      category,
+      type,
+    })
 
     reset()
   }
@@ -68,10 +75,10 @@ export function NewTransactionModal() {
             {...register('description')}
           />
           <input
-            type="text"
+            type="number"
             placeholder="Preço"
-            required
             {...register('price', { valueAsNumber: true })}
+            required
           />
           <input
             type="text"
