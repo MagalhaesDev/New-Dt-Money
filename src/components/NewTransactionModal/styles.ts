@@ -21,12 +21,31 @@ export const Content = styled(Dialog.Content)`
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @media (max-width: 769px) {
+    min-width: 100%;
+    padding: 1.4rem;
+    border-radius: 18px 18px 0 0;
+
+    top: auto;
+    left: 0;
+    transform: none;
+    bottom: 0;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
   form {
     margin-top: 2rem;
 
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media (max-width: 769px) {
+      gap: 0.75rem;
+    }
 
     input {
       border-radius: 6px;
@@ -59,6 +78,10 @@ export const Content = styled(Dialog.Content)`
       &:not(:disabled):hover {
         background: ${(props) => props.theme['green-700']};
         transition: background-color 0.2s;
+      }
+      
+      @media (max-width: 769px) {
+        height: 40px;
       }
     }
   }

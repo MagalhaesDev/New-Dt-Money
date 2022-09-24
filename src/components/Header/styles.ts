@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   background: ${(props) => props.theme['gray-900']};
   padding: 2.5rem 0 7.5rem;
+
+  @media (max-width: 769px) {
+    width: 100%;
+  }
 `
 
 export const HeaderContent = styled.div`
@@ -14,6 +18,12 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 769px) {
+    img {
+      width: 10rem;
+    }
+  }
 `
 
 export const NewTransactionButton = styled.button`
@@ -29,5 +39,9 @@ export const NewTransactionButton = styled.button`
   &:hover {
     background: ${(props) => props.theme['green-700']};
     transition: background-color 0.2s;
+  }
+
+  @media (max-width: 769px) {
+    height: 45px;
   }
 `

@@ -7,7 +7,11 @@ export const PaginateContainer = styled.footer`
   margin: 2.5rem;
 `
 
-export const PaginateItem = styled.button`
+interface PaginateItemProps {
+  isSelected: boolean
+}
+
+export const PaginateItem = styled.button<PaginateItemProps>`
   width: 2.5rem;
   height: 2.5rem;
 
@@ -19,7 +23,8 @@ export const PaginateItem = styled.button`
   justify-content: center;
 
   color: ${(props) => props.theme.white};
-  background-color: ${(props) => props.theme['gray-600']};
+  background-color: ${(props) =>
+    props.isSelected ? props.theme['green-500'] : props.theme['gray-600']};
 
   &:hover {
     background: ${(props) => props.theme['green-500']};

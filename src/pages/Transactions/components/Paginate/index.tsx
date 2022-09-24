@@ -41,6 +41,7 @@ export function Paginate({
                     Number((e.target as HTMLInputElement).value),
                   )
                 }
+                isSelected={index === currentPage}
               >
                 {index + 1}
               </PaginateItem>

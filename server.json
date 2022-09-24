@@ -39,6 +39,86 @@
       "type": "outcome",
       "createdAt": "2022-09-24T20:31:22.208Z",
       "id": 5
+    },
+    {
+      "description": "Aluguel",
+      "price": 1500,
+      "category": "Casa",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:37:35.400Z",
+      "id": 6
+    },
+    {
+      "description": "Conta de Luz",
+      "price": 150,
+      "category": "Casa",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:37:47.766Z",
+      "id": 7
+    },
+    {
+      "description": "Compras do mês",
+      "price": 780,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:38:45.851Z",
+      "id": 8
+    },
+    {
+      "description": "Freelancer",
+      "price": 1500,
+      "category": "Desenvolvimento",
+      "type": "income",
+      "createdAt": "2022-09-24T20:39:08.297Z",
+      "id": 9
+    },
+    {
+      "description": "Fundos imobiliários",
+      "price": 150,
+      "category": "Investimentos",
+      "type": "income",
+      "createdAt": "2022-09-24T20:39:44.126Z",
+      "id": 10
+    },
+    {
+      "description": "Reserva de Emergência",
+      "price": 450,
+      "category": "Investimentos",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:40:13.151Z",
+      "id": 11
+    },
+    {
+      "description": "Pastel da Feira",
+      "price": 28,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:40:47.399Z",
+      "id": 12
+    },
+    {
+      "description": "Cachorro quente",
+      "price": 18,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:41:02.383Z",
+      "id": 13
+    },
+    {
+      "description": "Netflix, Amazon Prime, Premiere",
+      "price": 240,
+      "category": "Entretenimento",
+      "type": "outcome",
+      "createdAt": "2022-09-24T20:41:42.379Z",
+      "id": 14
+    },
+    {
+      "description": "Tesouro direto",
+      "price": 30,
+      "category": "Investimentos",
+      "type": "income",
+      "createdAt": "2022-09-24T20:41:58.167Z",
+      "id": 15
     }
   ]
 }

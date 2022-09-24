@@ -111,7 +111,7 @@ export function NewTransactionModal() {
           />
 
           <button type="submit" disabled={isSubmitting}>
-            Cadastrar
+            {isSubmitting ? 'Cadastrando...' : 'Cadastrar'}
           </button>
         </form>
       </Content>
