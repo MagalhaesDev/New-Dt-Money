@@ -79,7 +79,7 @@ export function Transactions() {
         </TransactionsTable>
 
         <TransactionCardList>
-          {transactions.map((transaction) => (
+          {currentItens.map((transaction) => (
             <CardTransaction key={transaction.id}>
               <header>
                 <span>{transaction.description}</span>

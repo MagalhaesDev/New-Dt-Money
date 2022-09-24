@@ -24,6 +24,12 @@ export const HeaderContent = styled.div`
       width: 10rem;
     }
   }
+
+  @media (max-width: 425px) {
+    img {
+      width: 8rem;
+    }
+  }
 `
 
 export const NewTransactionButton = styled.button`
@@ -43,5 +49,9 @@ export const NewTransactionButton = styled.button`
 
   @media (max-width: 769px) {
     height: 45px;
+  }
+
+  @media (max-width: 425px) {
+    height: 40px;
   }
 `
