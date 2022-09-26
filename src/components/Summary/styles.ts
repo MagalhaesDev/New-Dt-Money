@@ -40,6 +40,7 @@ export const SummaryCard = styled.div<SummaryCardProps>`
 
     @media (max-width: 769px) {
       width: 10rem;
+      font-size: 1.5rem;
     }
   }
 
