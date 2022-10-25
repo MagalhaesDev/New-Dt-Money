@@ -6,7 +6,7 @@ Hello devs, this project was developed with the intention of being an applicatio
 
 ## Technology 
 
-Here are the technologies used in this project.
+Here are the technologies used in this project...
 
 * React 17.0.1
 * Typescript 4.1.2
