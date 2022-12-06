@@ -8,14 +8,7 @@
       "price": 9000,
       "createdAt": "2022-07-29T19:36:43.721Z"
     },
-    {
-      "description": "Jogo",
-      "price": 30,
-      "category": "Diversao",
-      "type": "outcome",
-      "createdAt": "2022-09-24T20:26:47.572Z",
-      "id": 3
-    },
+   
     {
       "description": "Suplementos",
       "price": 120,
