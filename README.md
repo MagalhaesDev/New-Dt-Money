@@ -2,7 +2,7 @@
 
 # DT Money 2.0
 
-Hello devs, this project was developed with the intention of being an application for personal financial spending controls, with a balancing system, creation of new transactions, filtering system, paging, etc.
+Hello devs, this project was developed with the intention of being an application for personal financial spending controls, with a balancing system, creation of new transactions, filtering system, paging, etc
 
 ## Technology 
 
